@@ -158,8 +158,10 @@ footer {
   .heroBox {
     display: flex;
     width: 1000px;
+    height: 100%;
     margin: 0 auto;
     justify-content: space-around;
+    align-items: flex-end;
 
     h1 {
       font-weight: bold;
@@ -177,6 +179,7 @@ footer {
       flex-direction: column;
       justify-content: center;
       padding: 3rem;
+      margin-bottom: 4rem;
     }
   }
 
