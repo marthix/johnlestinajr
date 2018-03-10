@@ -182,7 +182,8 @@ footer {
   background: -webkit-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
   background: -o-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
   background: linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center; }
   .about-hero .about-heroBox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,7 +217,8 @@ footer {
   max-width: 900px;
   margin: 0 auto;
   font-size: 1.5rem;
-  line-height: 2rem; }
+  line-height: 2rem;
+  padding: 1.5rem; }
 
 .home-worth {
   margin: 60px 0;
