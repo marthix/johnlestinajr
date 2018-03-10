@@ -174,6 +174,50 @@ footer {
       position: absolute;
       right: 0; }
 
+.about-hero {
+  height: 250px;
+  background-color: #C9412A;
+  color: #FCFAF9;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 65, 42, 0.75)), to(rgba(201, 65, 42, 0.75))), url("../assets/ohio.png");
+  background: -webkit-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
+  background: -o-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
+  background: linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/ohio.png");
+  background-size: cover; }
+  .about-hero .about-heroBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center; }
+    .about-hero .about-heroBox h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin: 2rem 0 0; }
+    .about-hero .about-heroBox h3 {
+      font-weight: normal;
+      font-size: 2rem; }
+    .about-hero .about-heroBox div {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 3rem; }
+
+.about {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
 .home-worth {
   margin: 60px 0;
   text-align: center; }

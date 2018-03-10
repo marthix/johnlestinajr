@@ -30,7 +30,13 @@
    </nav>
  </header>
 
- <h1>FOR SALE</h1>
+ <section class="hero">
+   <div class="heroBox">
+
+   </div>
+ </section>
+
+ FOR SALE
 
  <footer>
    <div class="footerBox">
@@ -38,7 +44,7 @@
 
      <div class="contact">
        <h1>CONTACT INFO</h1>
-       <p><i class="fas fa-envelope-square"></i>John@MakeItGreatRealEstate.com</p>
+       <p><i class="fas fa-envelope-square"></i><a href="mailto:John@MakeItGreatRealEstate.com">John@MakeItGreatRealEstate.com</a></p>
        <p><i class="fas fa-phone-square"></i>614-955-0336</p>
        <div class="social">
          <a href="https://www.facebook.com/johnlestinajr" target="blank"><i class="fab fa-facebook-square"></i></a>
@@ -56,12 +62,12 @@
      <div class="subscribe">
        <h1>RECEIVE UPDATES</h1>
        <p>Enter your email address to receive updates about the homes in Columbus:</p>
-       <form method="post" enctype="text/plain">
-         <div class="append-icon">
-           <input class="name-input" type="text" id="name" placeholder="Name" />
-           <input class="submit-btn" type="submit"/>
-           <input class="email-input" type="text" id="email" placeholder="Email Address" />
-         </div>
+       <form action="https://formspree.io/john@MakeItGreatRealEstate.com" method="post">
+         <input class="name-input" type="text" name="name" placeholder="Name" />
+         <input class="submit-btn" type="submit" value="Submit" />
+         <input class="email-input" type="email" name="_replyto" placeholder="Email Address" />
+         <input type="hidden" name="_subject" value="Thank you for subscribing!" />
+         <input type="hidden" name="_format" value="plain" />
        </form>
      </>
    </div>

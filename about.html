@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <title>John Lestina Jr. - A Make It Great Realtor</title>
+  <title>John Lestina Jr. - A Make It Great Realtor</title>
 
- <meta charset="UTF-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
- <link rel="icon" href="./favicon.ico" type="image/x-icon">
- <link rel="stylesheet" href="./css/normalize.css">
- <link rel="stylesheet" href="./css/main.css">
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
 
- <script type="text/javascript" src="./js/main.js" defer></script>
- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
+  <script type="text/javascript" src="./js/main.js" defer></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
 </head>
 <body>
- <header>
-   <nav>
-     <img class="jlj_logo" src="./assets/jlj_logo.png" />
-     <div class="navigation">
-       <a href="./index.html">Home</a>
-       <a class="selected" href="./about.html">About Me</a>
-       <a href="./listings.html">For Sale</a>
-       <a href="./blog.html">Blog</a>
-     </div>
-     <img class="migre_logo" src="./assets/migre_logo.png" />
-   </nav>
- </header>
+  <header>
+    <nav>
+      <img class="jlj_logo" src="./assets/jlj_logo.png" />
+      <div class="navigation">
+        <a href="./index.html">Home</a>
+        <a class="selected" href="./about.html">About Me</a>
+        <a href="./listings.html">For Sale</a>
+        <a href="./blog.html">Blog</a>
+      </div>
+      <img class="migre_logo" src="./assets/migre_logo.png" />
+    </nav>
+  </header>
 
- <h1>ABOUT ME</h1>
+ <section class="about-hero">
+   <div class="about-heroBox">
+     <div>
+       <h1>About Me</h1>
+       <h3>License #: cr.2018000208</h3>
+     </div>
+   </div>
+ </section>
+
+<section class="about">
+  <p>
+    Whether you want to sell your home, buy a new one, or find that next investment property, I am here to help you get more for your real estate.  While you’re browsing the page be sure to check out the blog, where I share tips and information that will help you better prepare and understand this world of real estate.  And of course, reach out to me with any questions.  I want to help you feel comfortable about every step of the real estate process, so let’s talk!
+  </p>
+  <p>
+    I have always had a passion for real estate, and I grew up surrounded by amazing real estate professionals throughout my family.  Some of my best memories are going on commercial appraisal assignments with my grandfather when I was a kid.  We always had so much fun, and he never made it seem like work.  With him, we wouldn’t just be out appraising properties, but we’d be finding the coolest buildings, in amazing places, with fascinating stories.  It was always an adventure, and it got me hooked on the industry at a very young age!
+  </p>
+  <p>
+    Even though I was hooked young, it took me until February of 2018, the day after my 30th birthday, to become a Realtor.  I waited until then, because I am also an American Sign Language (ASL) Interpreter.  I am a CODA, meaning both of my parents are Deaf, and I am a native, bilingual user of ASL and English.  I hold a National Interpreter Certification, and I have been recognized by the Supreme Courts of Ohio and Indiana as a legally qualified interpreter for work in the judicial system.  Interpreting is a great honor, and I love serving the Deaf community.
+  </p>
+  <p>
+    I absolutely adore the city of Columbus, GO BUCKEYES!  I am so proud of this city, and I want to meet everyone living here.  So please, say hello on my Social Media pages below, or feel free to call, text, or email me.  If you want to know the value of your home, or if you want to stay up to date on market activity in your area, you can fill out the forms on the website or just send me a quick message.  If you want to receive updates about new tips and information in the blog you can sign up to receive updates.
+  </p>
+ </section>
 
  <footer>
    <div class="footerBox">
@@ -38,7 +60,7 @@
 
      <div class="contact">
        <h1>CONTACT INFO</h1>
-       <p><i class="fas fa-envelope-square"></i>John@MakeItGreatRealEstate.com</p>
+       <p><i class="fas fa-envelope-square"></i><a href="mailto:John@MakeItGreatRealEstate.com">John@MakeItGreatRealEstate.com</a></p>
        <p><i class="fas fa-phone-square"></i>614-955-0336</p>
        <div class="social">
          <a href="https://www.facebook.com/johnlestinajr" target="blank"><i class="fab fa-facebook-square"></i></a>
@@ -56,12 +78,12 @@
      <div class="subscribe">
        <h1>RECEIVE UPDATES</h1>
        <p>Enter your email address to receive updates about the homes in Columbus:</p>
-       <form method="post" enctype="text/plain">
-         <div class="append-icon">
-           <input class="name-input" type="text" id="name" placeholder="Name" />
-           <input class="submit-btn" type="submit"/>
-           <input class="email-input" type="text" id="email" placeholder="Email Address" />
-         </div>
+       <form action="https://formspree.io/john@MakeItGreatRealEstate.com" method="post">
+         <input class="name-input" type="text" name="name" placeholder="Name" />
+         <input class="submit-btn" type="submit" value="Submit" />
+         <input class="email-input" type="email" name="_replyto" placeholder="Email Address" />
+         <input type="hidden" name="_subject" value="Thank you for subscribing!" />
+         <input type="hidden" name="_format" value="plain" />
        </form>
      </>
    </div>
