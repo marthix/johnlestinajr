@@ -63,11 +63,30 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 3rem 0; }
-  footer .logoBox img {
-    display: block;
-    margin: 0 auto; }
-  footer .logoBox img:first-child {
-    margin-bottom: 1rem; }
+  footer .logoBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    footer .logoBox div {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    footer .logoBox img {
+      display: inline-block;
+      margin: 0 1rem; }
+    footer .logoBox h3 {
+      font-weight: normal;
+      color: #FCFAF9; }
   footer .contact {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -198,9 +217,6 @@ footer {
       font-weight: bold;
       font-size: 3rem;
       margin: 2rem 0 0; }
-    .about-hero .about-heroBox h3 {
-      font-weight: normal;
-      font-size: 2rem; }
     .about-hero .about-heroBox div {
       text-align: center;
       display: -webkit-box;
@@ -390,7 +406,10 @@ footer {
       margin-bottom: 0; }
   footer .subscribe {
     margin-left: 0;
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+
+  .about-hero {
+    background-position: center right; } }
 @media (max-width: 768px) and (min-width: 480px) {
   .hero {
     height: 475px; }
@@ -404,7 +423,10 @@ footer {
   nav .jlj_logo {
     height: 40px; }
   nav .migre_logo {
-    height: 70px; } }
+    height: 70px; }
+
+  .about-hero {
+    background-position: center right; } }
 @media (max-width: 1024px) {
   footer .footerBox {
     -webkit-box-orient: vertical;
