@@ -169,6 +169,10 @@ footer {
       text-align: center;
       background-color: $red;
       color: white;
+
+      &:hover {
+        background-color: lighten($red, 7%)
+      }
     }
 
     .email-input {
@@ -238,7 +242,7 @@ footer {
 
 }
 
-.calculator {
+.home-worth {
   margin: 60px 0;
   text-align: center;
 
@@ -246,6 +250,88 @@ footer {
     width: 100%;
     max-width: 300px;
     margin: 2rem auto;
+  }
+
+  .home-worth-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid $red;
+    border-radius: .5rem;
+
+    input {
+      margin: 0.4rem 0;
+      background-color: rgba(201, 65, 42,0.01);
+      border: 1px solid rgba(201, 65, 42,0.1);
+      border-radius: 3px;
+      color: $black;
+      height: 2.5rem;
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      outline: none;
+      -webkit-transition: all 250ms ease;
+      -o-transition: all 250ms ease;
+      transition: all 250ms ease;
+      vertical-align: middle;
+      padding: 9px 12px 8px;
+
+      &::-webkit-input-placeholder {
+        color: $red;
+      }
+
+      &:-ms-input-placeholder {
+        color: $red;
+      }
+
+      &::-ms-input-placeholder {
+        color: $red;
+      }
+
+      &::placeholder {
+        color: $red;
+      }
+
+      &:focus {
+        border: 1px solid rgba(201, 65, 42,0.4);
+        color: $black;
+        background-color: $white;
+      }
+    }
+
+    .name-box, .contact-box {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .name, .contact {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+
+      &:first-child {
+        margin-right: 0.4rem;
+      }
+    }
+
+    .address {
+      width: 100%;
+    }
+
+    .submit {
+      background-color: $red;
+      color: $white;
+
+      &:hover {
+        background-color: lighten($red, 7%)
+      }
+
+      &:focus {
+        border: 1px solid rgba(201, 65, 42,0.4);
+        background-color: $red;
+        color: $white;
+      }
+    }
   }
 }
 
