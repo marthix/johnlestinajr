@@ -7,9 +7,6 @@ body {
   color: #302C2B;
   font-family: 'Dosis', sans-serif; }
 
-footer {
-  background-color: #302C2B; }
-
 header {
   padding: 1rem; }
 
@@ -19,18 +16,24 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 0 auto; }
+  nav .selected {
+    color: #C9412A; }
   nav a {
     color: #302C2B;
     padding: 1rem;
     font-size: 1.2rem;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    transition: .2s ease border-bottom; }
+    transition: .2s ease border-bottom;
+    display: inline-block; }
     nav a:hover {
       border-bottom: 2px solid #C9412A; }
+  nav .jlj_logo {
+    height: 60px; }
+  nav .migre_logo {
+    height: 90px; }
 
 footer {
-  height: 300px;
   background-color: #302C2B;
   color: #C1BEBD; }
   footer h1 {
@@ -71,16 +74,6 @@ footer {
     flex: 1;
     margin-left: 3rem;
     max-width: 325px; }
-    footer .subscribe .append-icon {
-      position: relative; }
-      footer .subscribe .append-icon input {
-        padding-right: 36px; }
-      footer .subscribe .append-icon svg {
-        color: #C9412A;
-        position: absolute;
-        right: 8px;
-        top: 8px;
-        font-size: 1.5rem; }
     footer .subscribe input {
       background-color: rgba(255, 255, 255, 0.05);
       border: 1px solid rgba(255, 255, 255, 0.1);
@@ -90,13 +83,23 @@ footer {
       box-shadow: none;
       outline: none;
       transition: all 250ms ease;
-      width: 325px;
       vertical-align: middle;
       padding: 9px 12px 8px; }
       footer .subscribe input:focus {
         border: 1px solid rgba(255, 255, 255, 0.3);
         color: #302C2B;
         background-color: #FCFAF9; }
+    footer .subscribe .name-input {
+      width: 70%; }
+    footer .subscribe .submit-btn {
+      width: 27%;
+      margin-left: 2%;
+      text-align: center;
+      background-color: #C9412A;
+      color: white; }
+    footer .subscribe .email-input {
+      width: 100%;
+      margin-top: 3%; }
 
 .hero {
   height: 500px;
@@ -106,11 +109,12 @@ footer {
   background-size: cover; }
   .hero .heroBox {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     height: 100%;
     margin: 0 auto;
     justify-content: space-around;
-    align-items: flex-end; }
+    align-items: flex-end;
+    position: relative; }
     .hero .heroBox h1 {
       font-weight: bold;
       font-size: 3rem; }
@@ -123,7 +127,12 @@ footer {
       flex-direction: column;
       justify-content: center;
       padding: 3rem;
-      margin-bottom: 4rem; }
+      margin-bottom: 4rem;
+      margin-right: 30%; }
+    .hero .heroBox .john {
+      height: 400px;
+      position: absolute;
+      right: 0; }
 
 .calculator {
   margin: 60px 0;
@@ -132,5 +141,106 @@ footer {
     width: 100%;
     max-width: 300px;
     margin: 2rem auto; }
+
+.testimonials {
+  background-color: #C1BEBD;
+  padding: 2rem;
+  position: relative;
+  min-height: 314px; }
+  .testimonials h1 {
+    margin: 0;
+    color: #C9412A;
+    font-size: 1.5rem;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s ease; }
+  .testimonials p {
+    font-size: 1.7rem;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s ease; }
+  .testimonials .quote {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-image: url("../assets/quotes.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .testimonials .hidden {
+    visibility: hidden;
+    opacity: 0; }
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column; }
+
+  .navigation {
+    margin: 15px; }
+
+  .hero {
+    height: 450px; }
+    .hero .heroBox h1 {
+      font-size: 2rem; }
+    .hero .heroBox h2 {
+      font-size: 1.5rem; }
+    .hero .heroBox .john {
+      height: 275px; }
+
+  footer .footerBox {
+    flex-direction: column-reverse; }
+  footer .contact {
+    margin-left: 0;
+    margin-bottom: 3rem; }
+  footer .logoBox {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    width: 200px; }
+    footer .logoBox img:first-child {
+      margin-bottom: 0; }
+  footer .subscribe {
+    margin-left: 0;
+    margin-bottom: 3rem; } }
+@media (max-width: 768px) and (min-width: 480px) {
+  .hero {
+    height: 475px; }
+    .hero .heroBox h1 {
+      font-size: 2.5rem; }
+    .hero .heroBox h2 {
+      font-size: 1.75rem; }
+    .hero .heroBox .john {
+      height: 350px; }
+
+  nav .jlj_logo {
+    height: 40px; }
+  nav .migre_logo {
+    height: 70px; } }
+@media (max-width: 1024px) {
+  footer .footerBox {
+    flex-direction: column-reverse; }
+  footer .contact {
+    margin-left: 0;
+    margin-bottom: 3rem; }
+  footer .logoBox {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    width: 200px; }
+    footer .logoBox img:first-child {
+      margin-bottom: 0; }
+  footer .subscribe {
+    margin-left: 0;
+    margin-bottom: 3rem; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -7,24 +7,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:400,700">
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script type="text/javascript" src="./js/main.js" defer></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
 </head>
 <body>
   <header>
     <nav>
-      <img class="jlj_logo" src="./assets/jlj_logo.png" height="60px" />
-      <div>
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">For Sale</a>
-        <a href="#">Testimonials</a>
-        <a href="#">Blog</a>
+      <img class="jlj_logo" src="./assets/jlj_logo.png" />
+      <div class="navigation">
+        <a class="selected" href="./index.html">Home</a>
+        <a href="./about.html">About Me</a>
+        <a href="./listings.html">For Sale</a>
+        <a href="./blog.html">Blog</a>
       </div>
-      <img src="./assets/migre_logo.png" height="100px" />
+      <img class="migre_logo" src="./assets/migre_logo.png" />
     </nav>
   </header>
 
@@ -34,13 +36,28 @@
         <h1>Hi, I'm John.</h1>
         <h2>I am passionate not just about finding your house, but looking for your home. Let me help you find yours in Columbus.</h2>
       </div>
-      <img src ="./assets/john.png" height="450px"/>
+      <img class="john" src="./assets/john-800.png"/>
     </div>
   </section>
 
   <section class="calculator">
     <h1>How much is your house worth?</h1>
     <img src="./assets/fakeulator.png" />
+  </section>
+
+  <section class="testimonials">
+    <div class="quote left">
+      <p>"John is just the absolute best realtor ever. Loved working with him!"</p>
+      <h1>- Jane Doe</h1>
+    </div>
+    <div class="quote right hidden">
+      <p class="hidden">"John made buying a home an amazing experience."</p>
+      <h1 class="hidden">- John Smith</h1>
+    </div>
+    <div class="quote left hidden">
+      <p class="hidden">"Best realtor ever!"</p>
+      <h1 class="hidden">- Joe Schmoe</h1>
+    </div>
   </section>
 
   <footer>
@@ -52,10 +69,10 @@
         <p><i class="fas fa-envelope-square"></i>John@MakeItGreatRealEstate.com</p>
         <p><i class="fas fa-phone-square"></i>614-955-0336</p>
         <div class="social">
-          <a href="https://www.facebook.com/johnlestinajr"><i class="fab fa-facebook-square"></i></a>
-          <a href="https://twitter.com/johnlestinajr"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://www.instagram.com/johnlestinajrrealtor/"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/johnlestinajr/"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/johnlestinajr" target="blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://twitter.com/johnlestinajr" target="blank"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/johnlestinajrrealtor/" target="blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/johnlestinajr/" target="blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
 
@@ -69,8 +86,9 @@
         <p>Enter your email address to receive updates about the homes in Columbus:</p>
         <form method="post" enctype="text/plain">
           <div class="append-icon">
-            <input type="text" id="email" placeholder="Enter your email...">
-            <i class="fas fa-envelope"></i>
+            <input class="name-input" type="text" id="name" placeholder="Name" />
+            <input class="submit-btn" type="submit"/>
+            <input class="email-input" type="text" id="email" placeholder="Email Address" />
           </div>
         </form>
       </>
