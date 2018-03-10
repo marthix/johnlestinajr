@@ -34,7 +34,7 @@
     <div class="heroBox">
       <div>
         <h1>Hi, I'm John.</h1>
-        <h2>I am passionate not just about finding your house, but looking for your home. Let me help you find yours in Columbus.</h2>
+        <h2>I'm here to help you get more for your real estate in Columbus.</h2>
       </div>
       <img class="john" src="./assets/john-800.png"/>
     </div>
@@ -84,11 +84,12 @@
       <div class="subscribe">
         <h1>RECEIVE UPDATES</h1>
         <p>Enter your email address to receive updates about the homes in Columbus:</p>
-        <form method="post" enctype="text/plain">
+        <form action="https://formspree.io/john@makeitgreatrealestate.com" method="post" enctype="text/plain">
           <div class="append-icon">
-            <input class="name-input" type="text" id="name" placeholder="Name" />
-            <input class="submit-btn" type="submit"/>
-            <input class="email-input" type="text" id="email" placeholder="Email Address" />
+            <input class="name-input" type="text" id="name" name="name" placeholder="Name" />
+            <input class="submit-btn" type="submit" value="Submit" />
+            <input class="email-input" type="text" id="email" name="_replyto" placeholder="Email Address" />
+            <input type="hidden" name="_subject" value="Thank you for subscribing!" />
           </div>
         </form>
       </>
