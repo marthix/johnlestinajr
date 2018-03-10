@@ -105,13 +105,16 @@ footer {
             flex: 1;
     margin-left: 3rem;
 
+    a {
+      color: $gray;
+    }
+
     .social {
       margin-top: 1rem;
 
       a {
         font-size: 2rem;
         margin: 0 1rem 0 0;
-        color: $gray;
 
         &:hover {
           color: $red;
@@ -435,6 +438,25 @@ footer {
     }
   }
 
+  .home-worth {
+    margin: 60px 1rem;
+
+    .home-worth-form {
+
+      .name-box, .contact-box {
+        flex-direction: column;
+      }
+
+      .name, .contact {
+
+        &:first-child {
+          margin-right: 0rem;
+        }
+      }
+
+    }
+  }
+
   footer {
 
     .footerBox {
@@ -501,6 +523,7 @@ footer {
       height: 70px;
     }
   }
+
 }
 
 @media (max-width: 1024px) {

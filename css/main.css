@@ -73,12 +73,13 @@ footer {
     -ms-flex: 1;
     flex: 1;
     margin-left: 3rem; }
+    footer .contact a {
+      color: #C1BEBD; }
     footer .contact .social {
       margin-top: 1rem; }
       footer .contact .social a {
         font-size: 2rem;
-        margin: 0 1rem 0 0;
-        color: #C1BEBD; }
+        margin: 0 1rem 0 0; }
         footer .contact .social a:hover {
           color: #C9412A; }
     footer .contact p {
@@ -309,6 +310,13 @@ footer {
       font-size: 1.5rem; }
     .hero .heroBox .john {
       height: 275px; }
+
+  .home-worth {
+    margin: 60px 1rem; }
+    .home-worth .home-worth-form .name-box, .home-worth .home-worth-form .contact-box {
+      flex-direction: column; }
+    .home-worth .home-worth-form .name:first-child, .home-worth .home-worth-form .contact:first-child {
+      margin-right: 0rem; }
 
   footer .footerBox {
     -webkit-box-orient: vertical;
