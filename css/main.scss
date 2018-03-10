@@ -263,7 +263,9 @@ footer {
     max-width: 1000px;
     height: 100%;
     margin: 0 auto;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 
     h1 {
       font-weight: bold;
