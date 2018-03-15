@@ -276,6 +276,16 @@ footer {
       justify-content: center;
       padding: 3rem; }
 
+.for-sale-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+  .for-sale-container .for-sale-grid .house {
+    display: block; }
+    .for-sale-container .for-sale-grid .house img {
+      max-width: 100%;
+      display: block; }
+
 .home-worth {
   margin: 60px 0;
   text-align: center; }
@@ -422,6 +432,16 @@ footer {
       flex-direction: column; }
     .home-worth .home-worth-form .name:first-child, .home-worth .home-worth-form .contact:first-child {
       margin-right: 0rem; }
+
+  .for-sale-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1rem; }
+    .for-sale-container .for-sale-grid .house {
+      display: block; }
+      .for-sale-container .for-sale-grid .house img {
+        max-width: 100%;
+        display: block; }
 
   footer .footerBox {
     -webkit-box-orient: vertical;
