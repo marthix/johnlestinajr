@@ -567,8 +567,6 @@ footer {
 
 .testimonials {
   background-color: $gray;
-  padding: 2rem;
-  min-height: 314px;
 
   h1 {
     margin: 0;
@@ -584,7 +582,7 @@ footer {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 10rem;
     background-image: url('../assets/quotes.png');
     background-repeat: no-repeat;
     background-position: 50% 50%;

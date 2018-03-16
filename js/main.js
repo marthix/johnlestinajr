@@ -5,11 +5,16 @@ fetch('http://www.johnlestinajr.com/data/testimonials.json')
   .then(function(json){
     var testimonials = json.testimonials;
 
-    cycleTestimonials(testimonials);
+    if (Object.keys(testimonials).length > 0) {
 
-    window.setInterval(function() {
       cycleTestimonials(testimonials);
-    }, 6000)
+
+      window.setInterval(function() {
+        cycleTestimonials(testimonials);
+      }, 6000)
+
+    }
+
 
   })
 

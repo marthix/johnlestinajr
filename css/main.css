@@ -419,9 +419,7 @@ footer {
         color: #FCFAF9; }
 
 .testimonials {
-  background-color: #C1BEBD;
-  padding: 2rem;
-  min-height: 314px; }
+  background-color: #C1BEBD; }
   .testimonials h1 {
     margin: 0;
     color: #C9412A;
@@ -432,7 +430,7 @@ footer {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 10rem;
     background-image: url("../assets/quotes.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
