@@ -7,18 +7,35 @@ fetch('http://www.johnlestinajr.com/data/houses.json')
     var forSaleHouses = json.houses.forSale;
     var soldHouses = json.houses.sold;
 
-    for (i in forSaleHouses) {
-      makeHouseHtml(forSaleHouses[i], 'forSaleGrid');
-    }
-
-    for (i in soldHouses) {
-      makeHouseHtml(soldHouses[i], 'soldGrid');
-    }
+    render(forSaleHouses, 'forSaleGrid');
+    render(soldHouses, 'soldGrid');
 
   })
 
+function render(object, gridId) {
+
+  if (Object.keys(object).length > 0) {
+    for (i in object) {
+      makeHouseHtml(object[i], gridId);
+    }
+  } else {
+    comingSoon(gridId);
+  }
+
+}
+
+function comingSoon(gridId) {
+
+  var grid = document.getElementById(gridId);
+  var soonText = document.createElement('h3');
+  soonText.innerHTML = 'More houses coming soon.';
+  grid.appendChild(soonText);
+
+}
+
 function makeHouseHtml(house, gridId) {
-  var forSaleGrid = document.getElementById(gridId)
+
+  var grid = document.getElementById(gridId)
   var houseLink = document.createElement('a');
   houseLink.classList.add('house');
   houseLink.href = house.url;
@@ -26,16 +43,12 @@ function makeHouseHtml(house, gridId) {
   houseLink.style.backgroundPosition = 'center';
   houseLink.style.backgroundRepeat = 'no-repeat';
   houseLink.style.backgroundSize = 'cover';
+  houseLink.target = "_blank";
 
   var housePrice = document.createElement('h2');
   housePrice.innerHTML = house.price;
 
-  // houseLink.appendChild(houseImg);
   houseLink.appendChild(housePrice);
-  forSaleGrid.appendChild(houseLink);
+  grid.appendChild(houseLink);
 
-  // <a class="house">
-  //   <img src="http://placehold.it/800x800">
-  //   <h2></h2>
-  // </a>
 }

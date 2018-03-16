@@ -370,7 +370,7 @@ footer {
 
 .for-sale-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 2rem auto 3rem;
   padding: 0 1rem;
 
   p {
@@ -379,13 +379,17 @@ footer {
   }
 
   h2 {
-    background: $red;
-    color: $white;
+    color: $red;
     display: inline-block;
     padding: .5rem;
   }
 
-  .for-sale-grid {
+  .for-sale-grid, .sold-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     .house {
       display: inline-block;
@@ -394,16 +398,21 @@ footer {
       height: 300px;
       margin: .5rem;
       color: $white;
+      -webkit-transition: ease all 0.3s;
+      -o-transition: ease all 0.3s;
       transition: ease all 0.3s;
 
       &:hover {
-        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+            -ms-transform: scale(1.03);
+                transform: scale(1.03);
       }
 
       h2 {
         position: absolute;
         display: inline-block;
         background-color: $red;
+        color: $white;
         padding: 1rem;
       }
     }
@@ -625,6 +634,15 @@ footer {
 
     }
 
+  }
+
+  .for-sale-container {
+
+    .for-sale-grid, .sold-grid {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+    }
   }
 
   footer {
