@@ -421,24 +421,13 @@ footer {
 .testimonials {
   background-color: #C1BEBD;
   padding: 2rem;
-  position: relative;
   min-height: 314px; }
   .testimonials h1 {
     margin: 0;
     color: #C9412A;
-    font-size: 1.5rem;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: visibility 0s, opacity 0.5s ease;
-    -o-transition: visibility 0s, opacity 0.5s ease;
-    transition: visibility 0s, opacity 0.5s ease; }
+    font-size: 1.5rem; }
   .testimonials p {
-    font-size: 1.7rem;
-    opacity: 1;
-    visibility: visible;
-    -webkit-transition: visibility 0s, opacity 0.5s ease;
-    -o-transition: visibility 0s, opacity 0.5s ease;
-    transition: visibility 0s, opacity 0.5s ease; }
+    font-size: 1.7rem; }
   .testimonials .quote {
     width: 100%;
     max-width: 700px;
@@ -461,16 +450,7 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .testimonials .hidden {
-    visibility: hidden;
-    opacity: 0; }
+    text-align: center; }
 
 @media (max-width: 480px) {
   nav {

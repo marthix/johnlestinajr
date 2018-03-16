@@ -5,9 +5,8 @@
 				"url": "https://www.zillow.com/homes/33907369_zpid/39.987051,-82.800608,39.890707,-82.962141_rect/12_zm/",
 				"img": "./assets/houses/house1.jpg",
 				"price": "$89,900"
-			},
+			}
 		},
-		"sold": {
-		}
+		"sold": {}
 	}
 }
