@@ -7,7 +7,7 @@ fetch('http://www.johnlestinajr.com/data/houses.json')
     var forSaleHouses = json.houses.forSale;
     var soldHouses = json.houses.sold;
 
-    render(data, 'forSaleGrid');
+    render(forSaleHouses, 'forSaleGrid');
     render(soldHouses, 'soldGrid');
 
   })
