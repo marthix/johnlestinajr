@@ -373,14 +373,38 @@ footer {
   margin: 0 auto;
   padding: 0 1rem;
 
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h2 {
+    background: $red;
+    color: $white;
+    display: inline-block;
+    padding: .5rem;
+  }
+
   .for-sale-grid {
 
     .house {
-      display: block;
+      display: inline-block;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      margin: .5rem;
+      color: $white;
+      transition: ease all 0.3s;
 
-      img {
-        max-width: 100%;
-        display: block;
+      &:hover {
+        transform: scale(1.03);
+      }
+
+      h2 {
+        position: absolute;
+        display: inline-block;
+        background-color: $red;
+        padding: 1rem;
       }
     }
   }
@@ -599,24 +623,6 @@ footer {
         }
       }
 
-    }
-  }
-
-  .for-sale-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem;
-
-    .for-sale-grid {
-
-      .house {
-        display: block;
-
-        img {
-          max-width: 100%;
-          display: block;
-        }
-      }
     }
 
   }

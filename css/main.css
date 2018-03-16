@@ -280,11 +280,29 @@ footer {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem; }
+  .for-sale-container p {
+    font-size: 1.2rem;
+    text-align: center; }
+  .for-sale-container h2 {
+    background: #C9412A;
+    color: #FCFAF9;
+    display: inline-block;
+    padding: .5rem; }
   .for-sale-container .for-sale-grid .house {
-    display: block; }
-    .for-sale-container .for-sale-grid .house img {
-      max-width: 100%;
-      display: block; }
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: .5rem;
+    color: #FCFAF9;
+    transition: ease all 0.3s; }
+    .for-sale-container .for-sale-grid .house:hover {
+      transform: scale(1.03); }
+    .for-sale-container .for-sale-grid .house h2 {
+      position: absolute;
+      display: inline-block;
+      background-color: #C9412A;
+      padding: 1rem; }
 
 .home-worth {
   margin: 60px 0;
@@ -432,16 +450,6 @@ footer {
       flex-direction: column; }
     .home-worth .home-worth-form .name:first-child, .home-worth .home-worth-form .contact:first-child {
       margin-right: 0rem; }
-
-  .for-sale-container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 1rem; }
-    .for-sale-container .for-sale-grid .house {
-      display: block; }
-      .for-sale-container .for-sale-grid .house img {
-        max-width: 100%;
-        display: block; }
 
   footer .footerBox {
     -webkit-box-orient: vertical;
