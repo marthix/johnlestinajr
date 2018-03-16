@@ -276,6 +276,44 @@ footer {
       justify-content: center;
       padding: 3rem; }
 
+.blog-hero {
+  height: 250px;
+  background-color: #C9412A;
+  color: #FCFAF9;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(201, 65, 42, 0.75)), to(rgba(201, 65, 42, 0.75))), url("../assets/blog.jpg");
+  background: -webkit-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/blog.jpg");
+  background: -o-linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/blog.jpg");
+  background: linear-gradient(rgba(201, 65, 42, 0.75), rgba(201, 65, 42, 0.75)), url("../assets/blog.jpg");
+  background-size: cover;
+  background-position: right 50% top 30%; }
+  .blog-hero .blog-heroBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .blog-hero .blog-heroBox h1 {
+      font-weight: bold;
+      font-size: 3rem;
+      margin: 2rem 0 0; }
+    .blog-hero .blog-heroBox div {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 3rem; }
+
 .for-sale-container {
   max-width: 1000px;
   margin: 2rem auto 3rem;
@@ -315,7 +353,8 @@ footer {
         padding: 1rem; }
 
 .blogContent {
-  text-align: center; }
+  text-align: center;
+  margin: 5rem auto; }
 
 .home-worth {
   margin: 60px 0;
