@@ -7,7 +7,7 @@ fetch('http://www.johnlestinajr.com/data/houses.json')
     var forSaleHouses = json.houses.forSale;
     var soldHouses = json.houses.sold;
 
-    render(forSaleHouses, 'forSaleGrid');
+    render(data, 'forSaleGrid');
     render(soldHouses, 'soldGrid');
 
   })
@@ -36,14 +36,20 @@ function comingSoon(gridId) {
 function makeHouseHtml(house, gridId) {
 
   var grid = document.getElementById(gridId)
-  var houseLink = document.createElement('a');
+
+  if (house.url !== '') {
+    var houseLink = document.createElement('a');
+    houseLink.href = house.url;
+    houseLink.target = "_blank";
+  } else {
+    var houseLink = document.createElement('div');
+  }
+
   houseLink.classList.add('house');
-  houseLink.href = house.url;
   houseLink.style.backgroundImage = 'url(' + house.img + ')';
   houseLink.style.backgroundPosition = 'center';
   houseLink.style.backgroundRepeat = 'no-repeat';
   houseLink.style.backgroundSize = 'cover';
-  houseLink.target = "_blank";
 
   var housePrice = document.createElement('h2');
   housePrice.innerHTML = house.price;
