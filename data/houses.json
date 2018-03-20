@@ -2,7 +2,7 @@
 	"houses": {
 		"forSale": {
 			"1": {
-				"url": "https://www.zillow.com/homes/33907369_zpid/39.987051,-82.800608,39.890707,-82.962141_rect/12_zm/",
+				"url": "http://www.flexmls.com/cgi-bin/mainmenu.cgi?cmd=url+other/run_public_link.html&public_link_tech_id=1dbi5ig7vufr&s=17&id=1&san=79206&cid=1",
 				"img": "./assets/houses/house1.jpg",
 				"price": "$89,900"
 			}
