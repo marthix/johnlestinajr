@@ -1,16 +1,19 @@
-fetch('http://www.johnlestinajr.com/data/houses.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json){
+var xmlhttp = new XMLHttpRequest();
 
-    var forSaleHouses = json.houses.forSale;
-    var soldHouses = json.houses.sold;
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.response);
+        var forSaleHouses = data.houses.forSale;
+        var soldHouses = data.houses.sold;
 
-    render(forSaleHouses, 'forSaleGrid');
-    render(soldHouses, 'soldGrid');
+        render(forSaleHouses, 'forSaleGrid');
+        render(soldHouses, 'soldGrid');
+    }
+};
 
-  })
+xmlhttp.open("GET", 'http://www.johnlestinajr.com/data/houses.json', true);
+xmlhttp.send();
+
 
 function render(object, gridId) {
 

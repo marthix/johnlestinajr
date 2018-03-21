@@ -1,22 +1,24 @@
-fetch('http://www.johnlestinajr.com/data/testimonials.json')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(json){
-    var testimonials = json.testimonials;
+var xmlhttp = new XMLHttpRequest();
 
-    if (Object.keys(testimonials).length > 0) {
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var data = JSON.parse(this.response);
+        var testimonials = data.testimonials;
 
-      cycleTestimonials(testimonials);
+        if (Object.keys(testimonials).length > 0) {
 
-      window.setInterval(function() {
-        cycleTestimonials(testimonials);
-      }, 6000)
+          cycleTestimonials(testimonials);
 
+          window.setInterval(function() {
+            cycleTestimonials(testimonials);
+          }, 6000)
+
+        }
     }
+};
 
-
-  })
+xmlhttp.open("GET", 'http://www.johnlestinajr.com/data/testimonials.json', true);
+xmlhttp.send();
 
 
 var testimonialTracker = 0;
