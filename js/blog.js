@@ -20,6 +20,12 @@ function render(array) {
     array.forEach(makePosts);
   } else {
     // find the id, and render specific post content
+    var id = window.location.search.replace("?id=", "");
+    var post = array.find(function (post) {
+      return post.id == id;
+    });
+    console.dir(post);
+    makePost(post);
   }
 
 }
@@ -57,12 +63,39 @@ function makePosts(post) {
 
 }
 
-function strip(html)
-{
+function makePost(post) {
+
+  var grid = document.getElementById('blogGrid');
+
+  var backLink = document.createElement('a');
+  backLink.href = './blog.html';
+  backLink.innerHTML = 'back to all posts';
+  backLink.classList.add('back')
+
+  var postBox = document.createElement('div');
+  postBox.classList.add('post-detail');
+
+  var postTitle = document.createElement('h1');
+  postTitle.innerHTML = post.title;
+
+  var postBody = document.createElement('p');
+  postBody.innerHTML = post.content;
+
+  var postDate = document.createElement('span');
+  postDate.innerHTML = convertDate(Date.parse(post.published));
+
+  postBox.appendChild(backLink);
+  postBox.appendChild(postDate);
+  postBox.appendChild(postTitle);
+  postBox.appendChild(postBody);
+  grid.appendChild(postBox);
+
+}
+
+function strip(html) {
    var tmp = document.implementation.createHTMLDocument("New").body;
    tmp.innerHTML = html;
    return tmp.textContent || tmp.innerText || "";
-
 }
 
 function convertDate(timestamp) {
@@ -71,7 +104,6 @@ function convertDate(timestamp) {
   var year = newDate.getFullYear();
   var month = newDate.getMonth() + 1;
   var day = newDate.getDate();
-  console.log(month);
 
   var date = month + '/' + day + '/' + year;
 

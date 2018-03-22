@@ -466,6 +466,32 @@ footer {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
 
+    .post-detail {
+      padding: 1rem;
+
+      a {
+        color: $red;
+
+        &:hover {
+          color: $gray;
+        }
+      }
+
+      .back {
+        padding: 1rem 0;
+      }
+
+      span {
+        float: right;
+      }
+
+      p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+    }
+
     .post {
       border: 1px solid $gray;
       border-radius: 3px;
@@ -504,6 +530,10 @@ footer {
                 flex: 0 1 auto;
         -ms-flex-item-align: end;
             align-self: flex-end;
+      }
+
+      p {
+        color: darken($gray, 10%);
       }
 
       &:hover {
