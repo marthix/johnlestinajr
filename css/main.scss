@@ -519,6 +519,10 @@ footer {
     .post-detail {
       padding: 1rem;
 
+      img {
+        width: 100%;
+      }
+
       a {
         color: $red;
 

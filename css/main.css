@@ -391,6 +391,8 @@ footer {
     flex-wrap: wrap; }
     .blog-container .blog-grid .post-detail {
       padding: 1rem; }
+      .blog-container .blog-grid .post-detail img {
+        width: 100%; }
       .blog-container .blog-grid .post-detail a {
         color: #C9412A; }
         .blog-container .blog-grid .post-detail a:hover {
